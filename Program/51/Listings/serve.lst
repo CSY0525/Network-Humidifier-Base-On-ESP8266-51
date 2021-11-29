@@ -1,0 +1,38 @@
+C51 COMPILER V9.60.0.0   SERVE                                                             10/23/2021 01:54:24 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE SERVE
+OBJECT MODULE PLACED IN .\Objects\serve.obj
+COMPILER INVOKED BY: D:\Program Files (x86)\Keil_v5\C51\BIN\C51.EXE serve.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND 
+                    -PRINT(.\Listings\serve.lst) TABS(2) OBJECT(.\Objects\serve.obj)
+
+line level    source
+
+   1          #include "reg52.h"
+   2          
+   3          void uart_init(void)
+   4          {
+   5   1          TMOD = 0x20;    
+   6   1          TH1 = 0xfd;     
+   7   1          TL1 = 0xfd;     
+   8   1          TR1 = 1;       
+   9   1          REN = 1;       
+  10   1          SM0 = 0;      
+  11   1          SM1 = 1;       
+  12   1          EA = 1;                   
+  13   1          ES = 1;        
+  14   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     22    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
